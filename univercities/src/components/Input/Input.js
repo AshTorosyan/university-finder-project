@@ -1,17 +1,14 @@
-import Wrapper from "../../ui/Wrapper/Wrapper"
+
 
 const Input = (props) => {
     return (
-        <Wrapper>
         <input
-          ref={props.ref}
+          ref={props.propsRef}
           onChange={props.onChange}
           className={props.className}
           placeholder={props.placeholder}
           type={props.type}
         />
-        <br />
-        </Wrapper>
        
     )
 }

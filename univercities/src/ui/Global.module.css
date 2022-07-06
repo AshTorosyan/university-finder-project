@@ -1,0 +1,13 @@
+.list-item {
+   border: 2px solid black;
+   list-style-type: none;
+   padding: 4px;
+   background-color: rgb(237, 237, 237);
+}
+
+.list {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4px;
+}

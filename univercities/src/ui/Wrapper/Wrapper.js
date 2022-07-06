@@ -1,3 +1,8 @@
-const Wrapper = (props) => {props.children}
+const Wrapper = (props) => {
+    return (
+        props.children
+    )
+    
+}
 
 export default Wrapper
