@@ -1,12 +1,13 @@
-import Input from "./components/Input/Input"
-import Text from "./components/Text/Text"
-import Wrapper from "./ui/Wrapper/Wrapper"
-import Card from "./ui/Card/Card"
-import { useRef, useState } from "react"
-import Button from "./components/Button/Button"
-import List from "./components/List/List"
-import Listitem from "./components/Listitem/Listitem"
-import classes from './ui/Global.module.css'
+import Input from "./components/Input/Input";
+import Text from "./components/Text/Text";
+import Wrapper from "./ui/Wrapper/Wrapper";
+import Card from "./ui/Card/Card";
+import { useRef, useState } from "react";
+import Button from "./components/Button/Button";
+import List from "./components/List/List";
+import Listitem from "./components/Listitem/Listitem";
+import classes from './ui/Global.module.css';
+import "./App.css";
 
 const App = () => {
   const searchValue = useRef('');
@@ -21,10 +22,10 @@ const App = () => {
 
   return (
    <Wrapper>
-      <Card>
-         <Text> Country to serach univercities </Text>
-         <Input propsRef={searchValue}  type='text' />
-         <Button onClick={findUnivercities}> Find </Button>
+      <Card className={classes.card}>
+         <Text className={classes.text}> Country to search universities </Text> <br></br>
+         <Input className={classes.input} propsRef={searchValue}  type='text' placeholder="write universities"/>
+         <Button className={classes.button} onClick={findUnivercities}> Find universities</Button>
 
       </Card>
       <List className={classes.list}>
